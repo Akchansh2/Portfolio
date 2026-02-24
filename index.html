@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akg.Devs</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Akg.dev</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div>
+        <h2>Creating Digital Experiences</h2>
+        <p>
+          Building modern, aesthetic web experiences with clean design and
+          purposeful code.
+        </p>
+      </div>
+    </section>
+
+    <section class="split reveal" id="about">
+      <div class="text-block">
+        <h3>Creative Development</h3>
+        <p>
+          I’m Akchansh Gairola, a Class 10 student and beginner web developer.
+          I’m learning how to build modern and responsive websites, and I
+          constantly upgrade my designs as I learn more. I’m focused on
+          improving every day and creating better projects step-by-step.
+        </p>
+      </div>
+      <img src="https://picsum.photos/600/500?random=1" />
+    </section>
+
+    <section class="split reverse">
+      <div class="text-block">
+        <h3>Modern Aesthetic</h3>
+        <p>
+          I create modern, aesthetic web experiences that balance design and
+          functionality. My focus is on clean layouts, smooth interactions, and
+          thoughtful details that make every project feel refined and
+          purposeful. I believe great design isn’t just about how it looks —
+          it’s about how it feels and performs..
+        </p>
+      </div>
+      <img src="https://picsum.photos/600/500?random=2" />
+    </section>
+
+    <section class="projects reveal" id="projects">
+      <h3>Some Of My Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>My old Portfolio Website</h4>
+          <p>A simple portfolio website built with HTML and CSS.</p>
+          <div class="project-links">
+            <a
+              href="https://akchansh2.github.io/My-portfolio/"
+              target="_blank"
+              class="demo-btn"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/akchansh2/My-portfolio"
+              target="_blank"
+              class="code-btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <h4>Discord Bug Reporting Portal</h4>
+          <p>A web application for reporting bugs in Discord servers.</p>
+          <div class="project-links">
+            <a
+              href="https://akchansh2.github.io/bug-reporting-portal/"
+              target="_blank"
+              class="demo-btn"
+              >Live Demo</a
+            >
+
+            <a
+              href="https://github.com/akchansh2/bug-reporting-portal"
+              target="_blank"
+              class="code-btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <h4>Calculator UI</h4>
+          <p>
+            A modern, responsive calculator user interface built with HTML, CSS,
+            and JavaScript.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://akchansh2.github.io/calculator/"
+              target="_blank"
+              class="demo-btn"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/akchansh2/calculator"
+              target="_blank"
+              class="code-btn"
+              >Source Code</a
+            >
+
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <h4>Aesthetic Clock</h4>
+          <p>
+            A modern, responsive clock with a clean and aesthetic design built
+            with HTML, CSS, and JavaScript.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://akchansh2.github.io/Clock/"
+              target="_blank"
+              class="demo-btn"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/akchansh2/Clock"
+              target="_blank"
+              class="code-btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <h3>Contact Me</h3>
+        <p>
+          I’m always open to discussing new projects, creative ideas, or
+          opportunities to collaborate. Whether you have a vision in mind or
+          just want to explore possibilities, feel free to reach out. Let’s
+          create something meaningful and impactful together.
+        </p>
+
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2026 Akg.dev Studio — Crafted with creativity & caffeine.</footer>
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+
+      function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+
+        reveals.forEach((reveal) => {
+          const elementTop = reveal.getBoundingClientRect().top;
+
+          if (elementTop < windowHeight - 100) {
+            reveal.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+  </body>
+</html>
